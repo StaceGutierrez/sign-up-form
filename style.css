@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Piazzolla';
+    src: url('/fonts/static/Piazzolla-SemiBold.ttf') format('truetype')
+}
+
+.header {
+    background-image: url(/images/turn-on-corner.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+.header-block h1 {
+   font-family: 'Piazzolla', 'Courier New', Courier, monospace; 
+   font-size: 60px; 
+   text-align: center;
+}
+
+.header-block {
+   background-color: hsla(28, 100%, 68%, 0.37);
+   align-self: stretch;
+}
+
+.main-container {
+    display: flex;
+}
+
+.foto-cred {
+    position: absolute;
+    top: 95%;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:rgba(240, 248, 255, 0.397);
+}
+
+a:link {
+    color: linen;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(139, 103, 24);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: forestgreen;
+  }
+

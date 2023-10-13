@@ -7,9 +7,11 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
+    <main>
     <div class="main-container">
         <div class="header">
-            <div class='header-block'><h1><img src='images/icons8-sun-150.svg' alt="sun Icon">Bem Vindo</h1></div>
+            <div class='header-block'><h1><img src='images/icons8-sun-80.svg' alt="Sun Icon">Bem Vindo</h1></div>
+
             <div class="foto-cred"><p>Photo by <a href="https://www.pexels.com/@irene-wahl-629183478/">Irene Wahl</a> on <a href="https://www.pexels.com/photo/turn-on-corridor-17587427/">Pexel</a></p></div>
         </div>
         <div class="form-layout">
@@ -21,30 +23,36 @@
                 <form>
                     <div class="user-input">
                         <h2>Let's do this!</h2>
-                        <div class="name">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="name">
 
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="name">
+                        <div class="line-one">
+                            <div class="first-name">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="last-name">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
                         </div>
-
-                        <div class="contact-info">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                        <div class="line-two">
+                            <div class="email contact-info">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"></div>
+                            <div class="phone contact-info">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="contact">
+                            </div>
                         </div>
-
-                        <div class="password">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-
-                            <label for="confirm-pw">Confirm Password</label>
-                            <input type="password" id="confirm-pw" name="password">
+                        <div class="line-three">
+                            <div class="password">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="confirm-pw">
+                                <label for="confirm-pw">Confirm Password</label>
+                                <input type="password" id="confirm-pw" name="confirm-pw">
+                            </div>
                         </div>
-
                         
                     </div>
                     <button class="sub-button btn"><span>Create Account</span></button>
@@ -55,6 +63,6 @@
         </div>
     </div>
 
-    
+    </main>    
 </body>
 </html>

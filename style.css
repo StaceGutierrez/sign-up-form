@@ -1,10 +1,16 @@
 main {
- width: 100%;
+ width: 90%;
+ height: 90%
 }
 
 body {
     padding: 0;
     margin: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 90%;
 }
 
 @font-face {
@@ -38,12 +44,6 @@ body {
 .header-block {
    background-color: hsla(28, 100%, 68%, 0.37);
    align-self: stretch;
-
-}
-
-.main-container {
-    display: flex;
-    width: 100%
 }
 
 .foto-cred {
@@ -53,7 +53,6 @@ body {
     font-size: 16px;
     font-weight: bolder;
     background-color:rgba(240, 252, 255, 0.801);
-
 }
 
 a:link {
@@ -71,7 +70,7 @@ a:hover {
 .form-layout {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     width: 60%;
     font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -79,9 +78,8 @@ a:hover {
 .text-container {
     position: relative;
     max-width: 50vw;
-    left: 10%;
-    top: 5%;
-    
+    left: 30px;
+    top: 5%; 
     margin-bottom: 6vh;
 }
 
@@ -91,73 +89,76 @@ a:hover {
 }
 
 .text-container p {
-    font-size: 30px;
+    font-size: 18px;
    font-weight: bold;
-    padding: 10px;
-    margin: 10px; 
+    padding: 8px;
+    margin: 8px; 
 }
 
 .form-container {
     display: flex;
     flex: 1 1 auto;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 5%;
 }
 
 h2 {
     position: relative;
-    top: 5%;
+    top: 2%;
     left: 5%;
     width: 30vw;
 }
 
-.name, .contact-info, .password {
+.name, .contact, .password {
     position: relative;
     left: 20px;
-    top: 30px;
+    top: 25px;
     margin-bottom: 20px;
     margin-right: 0;
 }
 
 label {
     display: inline-block;
-    width: 14%;
-    overflow-wrap: normal;
-    font-size: 1rem;
+    width: 16%;
+    font-size: .9rem;
+}
+
+.name input, 
+.contact input,
+.password input {
+    margin-right: 5%;
+
 }
   
-.first-name input[name='first-name'], 
-.email input[name='email'], 
+.name input[name='first-name'], 
+.contact input[name='email'], 
 .password input[name='password'],
-.confirm-pw input[name='confirm-pw'],
-.phone input[name='contact'],
-.last-name input[name='last-name'] {
+.password input[name='confirm-pw'],
+.contact input[name='phone'],
+.name input[name='last-name'] {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     padding: 7px;
     display: inline-block;
-    width: 30%;
-    box-sizing: border-box;
+    width: 25%;
+    /* box-sizing: border-box; */
     font: 1em sans-serif;
-    
-
 } 
-
-@media only screen and (min-width: 800px) {
-    .user-input {
-        border: 3px solid transparent;
-        width: 40vw;
-        height: 80px; 
-        transition: border 0.5s ease;
-        animation: border-pulse 2s ease-in-out infinite;
-    }
-}
 
 .user-input {
     border: 3px solid transparent;
-    width: 58vw;
+    width: 60vw;
     height: 40vh; 
     transition: border 0.5s ease;
     animation: border-pulse 2s ease-in-out infinite;
+    left: 2%;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #3789bf;
+    box-shadow: 0 0 10px #719ECE;
 }
   
 .brder:hover {
@@ -184,11 +185,15 @@ label {
     }
 }
 
-
-.user-input input {
-    border-radius: 5px;
-    
+a:last-of-type, p:last-of-type{
+    font-size: 16px;
 }
+
+a:last-of-type:hover {
+    font-weight: bold;
+    color: red;
+}
+
 
 /* Button Start */
 
@@ -213,6 +218,7 @@ button {
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
+    left: 25px;
 }
   
 .sub-button {

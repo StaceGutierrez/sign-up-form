@@ -46,10 +46,11 @@
                         
                             <div class="password">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="password" class="error">
+                                <input type="password" id="password" name="password" class="error" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
                             
                                 <label for="confirm-pw">Confirm Password</label>
-                                <input type="password" id="confirm-pw" name="confirm-pw" class="error">
+                                <input type="password" id="confirm-pw" name="confirm-pw" class="error" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                                <p class="message">Must be between 8 and 16 characters.</p>
                             </div>
                             
                         </div>
@@ -63,5 +64,5 @@
         </div>
     </main>    
 </body>
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 </html>
